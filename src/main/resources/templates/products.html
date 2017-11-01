@@ -13,8 +13,8 @@
         <h2>Product List</h2>
         <table class="table table-striped">
             <tr>
-                <th>Id</th>
-                <th>Product Id</th>
+                <!--   <th>Id</th>
+                <th>Product Id</th>-->
                 <th>Name</th>
                 <th>Price</th>
                 <th>View</th>
@@ -22,8 +22,8 @@
                 <th>Delete</th>
             </tr>
             <tr th:each="product : ${products}">
-                <td th:text="${product.id}"><a href="/product/${product.id}">Id</a></td>
-                <td th:text="${product.productId}">Product Id</td>
+                <!--  <td th:text="${product.id}"><a href="/product/${product.id}">Id</a></td>
+                <td th:text="${product.productId}">Product Id</td> -->
                 <td th:text="${product.name}">descirption</td>
                 <td th:text="${product.price}">price</td>
                 <td><a th:href="${ '/product/' + product.id}">View</a></td>

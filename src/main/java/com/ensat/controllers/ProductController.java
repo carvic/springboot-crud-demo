@@ -28,7 +28,7 @@ public class ProductController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/products", method = RequestMethod.GET)
+    @RequestMapping(value = "/product", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("products", productService.listAllProducts());
         System.out.println("Returning rpoducts:");
